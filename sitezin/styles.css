@@ -1,0 +1,794 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik";
+  font-size: 16px;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1C1C1C;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #363636;
+  border: 1px solid #FFF;
+  border-radius: 20px;
+}
+
+a {
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.navbar {
+  height: 10vh;
+  min-height: 80px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.navbar div.navbar-container {
+  width: 85%;
+  height: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav.navbar div.navbar-container div.grid-first {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.navbar div.navbar-container div.grid-first a img.logo {
+  height: 35px;
+  width: auto;
+}
+
+nav.navbar div.navbar-container div.grid-second {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.navbar div.navbar-container div.grid-second a.item {
+  margin: 0 1.5vw;
+  font-size: 1em;
+  color: #160152;
+  font-weight: 500;
+}
+
+nav.navbar div.navbar-container div.grid-second button.access {
+  height: 45px;
+  width: 140px;
+  min-width: 90px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  border: none;
+  color: #fff;
+  background-color: #5a23f9;
+  cursor: pointer;
+}
+
+nav.navbar div.navbar-container div.grid-second button.access:hover {
+  background-color: #2b0f7d;
+}
+
+section.first-section {
+  min-height: 80vh;
+  width: 100%;
+  padding: 10vh 7.5vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+section.first-section div.presentation {
+  height: 100%;
+}
+
+section.first-section div.presentation div.software {
+  width: fit-content;
+  padding: 0 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-color: #ded3fe;
+}
+
+section.first-section div.presentation div.software p.software {
+  color: #3e06de;
+  font-family: "Roboto";
+  font-size: 0.9em;
+  margin: 6px 4px;
+}
+
+section.first-section div.presentation p.title {
+  max-width: 600px;
+  margin: 30px 0;
+  color: #160152;
+  font-size: 3.2em;
+  font-weight: 600;
+}
+
+section.first-section div.presentation p.description {
+  max-width: 430px;
+  line-height: 25px;
+  color: #493484;
+  font-size: 1.2em;
+}
+
+section.first-section div.image {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.second-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10vh 7.5vw;
+  background-color: #f9f7ff;
+  background-image: url("src/img/Vector\ 3.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+section.second-section p.title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #160152;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+section.second-section div.display-flex {
+  display: flex;
+}
+
+section.second-section div.display-flex div.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+section.second-section div.display-flex div.presentation div.grid {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+section.second-section div.display-flex div.presentation div.grid div.item {
+  width: 42.5vw;
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+section.second-section div.display-flex div.presentation div.grid div.item div.contour {
+  height: 100%;
+  padding: 18px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4dbff;
+  border-radius: 20px 0 20px 0;
+}
+
+section.second-section div.display-flex div.presentation div.grid div.item div.information {
+  height: 100%;
+}
+
+section.second-section div.display-flex div.presentation div.grid div.item div.information p.title {
+  font-size: 1.4em;
+  font-weight: 600;
+  text-align: left;
+  color: #2b0f7d;
+  margin: 5px 0;
+}
+
+section.second-section div.display-flex div.presentation div.grid div.item div.information p.description {
+  font-size: 1.1em;
+  text-align: justify;
+  color: #8c869f;
+  margin: 0;
+}
+
+section.third-section {
+  min-height: 80vh;
+  width: 100%;
+  padding: 10vh 7.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f7ff;
+  background-image: url("src/img/Formas.png"), url("src/img/Formas\ \(1\).png");
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+
+section.third-section p.title {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  color: #2b0f7d;
+}
+
+section.third-section p.description {
+  margin: 40px;
+  text-align: center;
+  max-width: 640px;
+  font-size: 1.2em;
+  color: #918ba4;
+  background-color: #f9f7ff;
+}
+
+section.forth-section {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7.5vw;
+  background-color: #5a23f9;
+  background-image: url("src/img/Vector\ 376.png"), url("src/img/Vector\ 4.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+section.forth-section div.title {
+  min-width: 300px;
+}
+
+section.forth-section div.title p.title {
+  max-width: 280px;
+  margin: 40px 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+}
+
+section.forth-section div.perfils {
+  display: flex;
+}
+
+section.forth-section div.perfils div.perfil {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+
+section.forth-section div.perfils div.perfil div.superior {
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: visible;
+}
+
+section.forth-section div.perfils div.perfil div.superior img {
+  position: relative;
+}
+
+section.forth-section div.perfils div.perfil div.inferior {
+  height: 220px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px 15px;
+  background-color: #e7e7e7;
+  border-radius: 20px 0 20px 0;
+}
+
+section.forth-section div.perfils div.perfil img.avaliation {
+  width: 120px;
+}
+
+section.forth-section div.perfils div.perfil p {
+  text-align: center;
+}
+
+section.forth-section div.perfils div.perfil p.name {
+  margin: 20px 0;
+  font-weight: 700;
+  color: #2b0f7d;
+}
+
+section.forth-section div.perfils div.perfil p.about {
+  margin-bottom: 15px;
+  font-size: 0.8em;
+  color: #8c869f;
+}
+
+section.fifth-section {
+  min-height: 90vh;
+  width: 100%;
+  padding: 10vh 7.5vw;
+  display: flex;
+  background-image: url("src/img/Vector\ 3\ \(1\).png"),
+    url("src/img/Vector\ 403.png");
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+section.fifth-section div.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.fifth-section div.presentation {
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+section.fifth-section div.presentation p.title {
+  font-size: 3em;
+  font-weight: 900;
+  color: #2b0f7d;
+}
+
+section.fifth-section div.presentation p.description {
+  width: 360px;
+  margin: 25px 0;
+  font-size: 1.3em;
+  color: #787878;
+}
+
+section.fifth-section div.presentation button {
+  height: 50px;
+  width: 200px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2em;
+  background-color: #5a23f9;
+  color: #fff;
+  cursor: pointer;
+}
+
+section.fifth-section div.presentation button:hover {
+  background-color: #2b0f7d;
+}
+
+section.sixth-section {
+  min-height: 90vh;
+  width: 100%;
+  padding: 10vh 7.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("src/img/Polygon\ 17.png"),
+    url("src/img/Polygon\ 16.png"), url("src/img/Polygon\ 15.png"),
+    url("src/img/Polygon\ 14.png");
+  background-position: top left, bottom left, bottom center, top right;
+  background-repeat: no-repeat;
+}
+
+section.sixth-section p.title {
+  text-align: center;
+  margin: 15px;
+  color: #2b0f7d;
+  font-size: 34.06px;
+  font-weight: 600;
+}
+
+section.sixth-section p.about {
+  margin: 10px;
+  color: #7c7c7c;
+  font-size: 15.14px;
+}
+
+section.sixth-section div.plans {
+  display: flex;
+}
+
+section.sixth-section div.plans div.plan {
+  margin: 15px;
+  padding: 30px 27px;
+  background-image: url("src/img/Group\ 8873.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+section.sixth-section div.plans div.plan1 {
+  border-radius: 20px;
+}
+
+section.sixth-section div.plans div.plan2 {
+  border-radius: 20px;
+  background-color: #5a23f9;
+  color: #fff;
+}
+
+section.sixth-section div.plans div.plan-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+section.sixth-section div.plans div.plan-type p {
+  margin-left: 20px;
+  font-size: 1.2em;
+  font-weight: 900;
+  flex-grow: 1;
+}
+
+section.sixth-section div.plans div.plan1 div.plan-type p {
+  color: #2e2e2e;
+}
+
+section.sixth-section div.plans div.plan2 div.plan-type p {
+  color: #fff;
+}
+
+section.sixth-section div.plans div.plan p.subtitle {
+  margin-bottom: 13px;
+  margin-left: 8px;
+  font-size: 0.6em;
+}
+
+section.sixth-section div.plans div.plan1 p.subtitle {
+  color: #757575;
+}
+
+section.sixth-section div.plans div.plan2 p.subtitle {
+  color: #d6d6d6;
+}
+
+section.sixth-section div.plans div.plan div.topics div.topic {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  margin-left: 8px;
+}
+
+section.sixth-section div.plans div.plan div.topics div.topic p {
+  margin-left: 8px;
+  font-size: 0.7em;
+}
+
+section.sixth-section div.plans div.plan hr {
+  width: 100%;
+  margin: 20px 0;
+}
+
+section.sixth-section div.plans div.plan1 hr {
+  border: 1px dashed #7c7c7c;
+}
+
+section.sixth-section div.plans div.plan2 hr {
+  border: 1px dashed #fff;
+}
+
+section.sixth-section div.plans div.plan p.price {
+  margin-left: 8px;
+  font-weight: 0.9em;
+  font-weight: 600;
+}
+
+section.sixth-section div.plans div.plan p.adendo {
+  margin-left: 8px;
+  font-size: 0.6em;
+  color: #d6d6d6;
+}
+
+section.sixth-section div.plans div.plan button {
+  height: 40px;
+  width: 200px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.75em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+section.sixth-section div.plans div.plan1 button {
+  margin-top: 27px;
+  background-color: #5a23f9;
+  color: #fff;
+}
+
+section.sixth-section div.plans div.plan1 button:hover {
+  color: #5a23f9;
+  background-color: #fff;
+  border: 2px solid #5a23f9;
+}
+
+section.sixth-section div.plans div.plan2 button {
+  background-color: #fff;
+  color: #5a23f9;
+}
+
+section.sixth-section div.plans div.plan2 button:hover {
+  color: #fff;
+  background-color: #5a23f9;
+  border: 2px solid #fff;
+}
+
+footer.footer {
+  min-height: 40vh;
+  width: 100%;
+  padding: 5vh 7.5vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b0f7d;
+  color: #fff;
+}
+
+footer.footer div.grid {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+footer.footer div.grid div.information {
+  margin-right: 4vw;
+}
+
+footer.footer div.grid div.information p.title {
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+footer.footer div.grid div.information p.topic {
+  padding: 5px 0;
+  font-size: 0.8em;
+}
+
+footer.footer div.grid div.button-group {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+
+footer.footer div.grid div.button-group a.app {
+  padding: 7px 20px;
+  margin-left: 10px;
+  display: flex;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer.footer div.grid div.button-group a.app div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer.footer div.grid div.button-group a.app div p {
+  margin: 0 10px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 6.78px;
+}
+
+footer.footer div.grid div.button-group a.app div p.plataform {
+  font-size: 13.56px;
+}
+
+footer.footer hr {
+  border: 1px solid #fff;
+  margin: 5vh 0;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 13px;
+  }
+
+  nav.navbar {
+    height: 35vh;
+  }
+
+  nav.navbar div.navbar-container {
+    height: 90%;
+    flex-direction: column;
+  }
+
+  nav.navbar div.navbar-container div.grid-first {
+    height: fit-content;
+  }
+
+  nav.navbar div.navbar-container div.grid-second {
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav.navbar div.navbar-container div.grid-second a.item {
+    width: 100%;
+    text-align: center;
+    margin: 0.8vh 0;
+    padding: 3px;
+    border-bottom: 1px solid;
+  }
+
+  nav.navbar div.navbar-container div.grid-second button.access {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav.navbar div.navbar-container div.grid-second button.access img {
+    margin-right: 5px;
+  }
+
+  section.first-section {
+    height: auto;
+    flex-direction: column;
+  }
+
+  section.first-section div.image img{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  section.second-section {
+    height: auto;
+    width: 100%;
+    background-image: none;
+  }
+
+  section.second-section div.display-flex {
+    flex-direction: column;
+  }
+
+  section.second-section div.display-flex div.presentation div.grid {
+    align-items: flex-start;
+  }
+
+  section.second-section div.display-flex div.presentation div.grid div.item {
+    width: 100%;
+  }
+
+  section.third-section {
+    height: auto;
+    background-size: 35%;
+  }
+
+  section.third-section img {
+    height: auto;
+    width: 100%;
+  }
+
+  section.forth-section {
+    height: 90vh;
+    padding: 5vh 7.5vw;
+    flex-direction: column;
+    background-size: 70%;
+  }
+  
+  section.forth-section div.pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  section.forth-section div.pagination p.title {
+    margin: none;
+    text-align: center;
+  }
+  
+  section.forth-section div.pagination div.button-group {
+    width: 100%;
+  }
+
+  section.forth-section div.perfils {
+    width: 100%;
+  }
+
+  section.forth-section div.shadow {
+    display: none;
+  }
+
+  section.fifth-section {
+    height: auto;
+    flex-direction: column;
+    background-size: 50%;
+  }
+  
+  section.fifth-section div.image {
+    width: 100%;
+  }
+
+  section.fifth-section div.image img {
+    height: auto;
+    width: 100%;
+  }
+  
+  section.fifth-section div.presentation {
+    padding: 0;
+  }
+  
+  section.fifth-section div.presentation p.description {
+    width: 80%;
+  }
+
+  section.sixth-section div.plans {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1300px) {
+  body {
+    font-size: 14.5px;
+  }
+
+  section.first-section div.presentation p.title {
+    font-size: 3em;
+  }
+
+  section.first-section div.image img{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  section.forth-section {
+    background-size: 50%;
+  }
+  
+  section.fifth-section div.image {
+    width: 70%;
+  }
+
+  section.fifth-section div.image img {
+    height: auto;
+    width: 100%;
+    min-width: 400px;
+  }
+  
+  section.fifth-section div.presentation {
+    padding-left: 25px;
+  }
+  
+  section.fifth-section div.presentation p.description {
+    width: 100%;
+    max-width: 360px;
+  }
+}
